@@ -5,7 +5,7 @@ class GameController:
 
     def start_game(self, size, players, winning_stg):
         # validations..
-        self.gameService.start_game(size, players, winning_stg)
+        return self.gameService.start_game(size, players, winning_stg)
 
     def display_board(self,game):
         self.gameService.display_game(game)

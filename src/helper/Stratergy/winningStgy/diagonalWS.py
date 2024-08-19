@@ -8,7 +8,7 @@ class DiagonalWS(Winning):
 
     def check_winner(self, cell, board):
         row = cell.row
-        col = cell.col
+        col = cell.column
         symbol = cell.player.symbol
 
         if row == col:
@@ -29,7 +29,7 @@ class DiagonalWS(Winning):
 
     def undo_handle(self, cell, board):
         row = cell.row
-        col = cell.col
+        col = cell.column
         symbol = cell.player.symbol
 
         if row == col:

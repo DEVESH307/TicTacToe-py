@@ -1,5 +1,4 @@
 from src.CustomExceptions.InvalidPlayerException import InvalidPlayerException
-from src.models.Game import Game
 
 
 class GameBuilder:
@@ -26,5 +25,6 @@ class GameBuilder:
             raise InvalidPlayerException()
 
     def build(self):
+        from src.models.Game import Game
         self.validate()
         return Game(self.dimension, self.players, self.winning_startergies)
