@@ -8,3 +8,8 @@ class Cell:
         self.player = None
         self.status = CellStatus.EMPTY
 
+    def display(self):
+        if self.status == CellStatus.EMPTY:
+            print("| - |", end="")
+        else:
+            print(f"|  {self.player.symbol.symbol} |", end="")

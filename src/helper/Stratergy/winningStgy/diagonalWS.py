@@ -1,4 +1,4 @@
-from src.helper.Stratergy.winning import Winning
+from src.helper.Stratergy.winningStgy.winning import Winning
 
 
 class DiagonalWS(Winning):

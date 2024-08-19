@@ -1,3 +1,4 @@
+from src.helper.GameBuilder import GameBuilder
 from src.models.GameStatus import GameStatus
 from src.models.board import Board
 
@@ -11,3 +12,8 @@ class Game:
         self.next_turn = 0
         self.winner = None
         self.gameStatus = GameStatus.INPROGRESSED
+
+
+    @staticmethod
+    def gameBuilder():
+        return GameBuilder()
