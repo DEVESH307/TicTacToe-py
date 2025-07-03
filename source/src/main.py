@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.controller.GameController import GameController
 from src.helper.Stratergy.winningStgy.diagonalWS import DiagonalWS
 from src.models.Bot import Bot
